@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090d16"><meta name="description" content="Mujahid Personal OS — goals, tasks, habits and daily reviews.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="styles.css"><title>Mujahid Personal OS</title>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">M</div><div><b>MUJAHID</b><small>PERSONAL OS</small></div></div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="dashboard">◫ <span>Dashboard</span></button>
+      <button class="nav-item" data-page="tracker">▦ <span>Consistency</span></button>
+      <button class="nav-item" data-page="tasks">☑ <span>Tasks</span></button>
+      <button class="nav-item" data-page="goals">◎ <span>Goals</span></button>
+      <button class="nav-item" data-page="journal">▤ <span>Journal</span></button>
+      <button class="nav-item" data-page="analytics">⌁ <span>Analytics</span></button>
+      <button class="nav-item" data-page="settings">⚙ <span>Settings & Backup</span></button>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Local data protected on this device</div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button id="menuBtn" class="icon-btn mobile-only" aria-label="Menu">☰</button><div><div class="eyebrow" id="todayLabel"></div><h1 id="pageTitle">Dashboard</h1></div><div class="top-actions"><span class="live-pill"><i></i> PERSONAL WORKSPACE</span><button class="avatar" title="Mujahid">M</button></div></header>
+    <section id="pageContent" class="content"></section>
+    <footer>MUJAHID PERSONAL OS <span>·</span> Build your future, one day at a time.</footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<dialog id="modal"><form method="dialog" id="modalForm"><div class="modal-head"><h2 id="modalTitle">Add item</h2><button class="icon-btn" value="cancel" aria-label="Close">✕</button></div><div id="modalBody"></div><div class="modal-actions"><button class="btn ghost" value="cancel">Cancel</button><button class="btn primary" id="modalSave" value="default">Save</button></div></form></dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body></html>

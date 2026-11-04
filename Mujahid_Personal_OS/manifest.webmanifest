@@ -1,0 +1,17 @@
+{
+  "name": "Mujahid Personal OS",
+  "short_name": "Mujahid OS",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "description": "Personal productivity system for goals, tasks and consistency.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
